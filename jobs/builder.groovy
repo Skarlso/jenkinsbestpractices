@@ -1,4 +1,4 @@
-job('./TestJOb') {
+job('TestJob') {
     description """Some <strong>strong</strong>,<br/>
                  multiline text here.<br/>"""
 
