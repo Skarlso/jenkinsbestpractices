@@ -26,7 +26,7 @@ job('test_job') {
     }
 
     steps {
-        shell('watch -n date')
+        shell('watch -n 5 date')
     }
     publishers {
         // extendedEmail {
