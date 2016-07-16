@@ -26,7 +26,7 @@ job('test_job') {
     }
 
     steps {
-        shell('go build $WORKSPACE/src/main.go')
+        shell('watch -n date')
     }
     publishers {
         // extendedEmail {
