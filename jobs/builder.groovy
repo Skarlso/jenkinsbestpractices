@@ -1,4 +1,4 @@
-job('TestJob') {
+job('test_job') {
     description """Some
                  multiline text here."""
 
