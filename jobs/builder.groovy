@@ -47,6 +47,6 @@ job('test_job') {
         //         }
         //     }
         // }
-        buildDescription('', '${BRANCH}')
+        buildDescription('', '${GIT_BRANCH}')
     }
 }
