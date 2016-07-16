@@ -1,13 +1,13 @@
 job('TestJob') {
-    description """Some <strong>strong</strong>,<br/>
-                 multiline text here.<br/>"""
+    description """Some
+                 multiline text here."""
 
     label('master')
     parameters {
         stringParam('param1', 'default', 'First Parameter')
-        stringParam('param2', '', """Some<br/>
-                                  Multiline<br/>
-                                  <b>Text here as well.</b>""")
+        stringParam('param2', '', """Some
+                                  Multiline
+                                  Text here as well.""")
         choiceParam('target_env', ['linux', 'osx'], 'Target environment')
     }
     wrappers {
@@ -20,7 +20,7 @@ job('TestJob') {
         git {
             remote {
                 name('main')
-                url('git@github.com:Skarlso/jenkinsbestpractices.git')
+                url('https://github.com/Skarlso/jenkinsbestpractices.git')
             }
         }
     }
