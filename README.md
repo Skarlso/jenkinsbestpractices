@@ -1,2 +1,4 @@
-# DataMung
-Writing up the DataMunger coding kata.
+Jenkins Best Practices
+======================
+
+Code, I'm using for my *Jenkins Best Practices* talk.
