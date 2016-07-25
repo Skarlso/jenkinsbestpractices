@@ -26,7 +26,7 @@ job('test_job') {
     }
 
     steps {
-        shell('for i in {1..5}; do date; done')
+        gradle('test')
     }
     publishers {
         // extendedEmail {
