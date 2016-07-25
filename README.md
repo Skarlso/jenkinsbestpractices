@@ -1,2 +1,2 @@
-# Jenkins Best Practices
-A repository for jenkins best practices code.
+# DataMung
+Writing up the DataMunger coding kata.
