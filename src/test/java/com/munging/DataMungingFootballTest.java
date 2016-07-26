@@ -30,7 +30,7 @@ public class DataMungingFootballTest {
         FootballData f1 = new FootballData("Arsenal", 36, 87);
         FootballData f2 = new FootballData("Liverpool", 30, 80);
         List<Data> myTestList = Arrays.asList(f1, f2);
-        Assert.assertThat(((FootballData)dataMungingFootball.returnMinimumDifference(myTestList)).getTeamName(), is("Liverpool"));
+        Assert.assertThat(((FootballData)dataMungingFootball.returnMinimumDifference(myTestList)).getTeamName(), is("asdf"));
     }
 
     @Test
