@@ -27,6 +27,7 @@ public class DataMungingFootballTest {
 
     @Test
     public void testCanCompareAListOfSpacedNumbers() throws Exception {
+        System.out.println("THIS IS RUNNING IN A DIFFERENT BRANCH!");
         FootballData f1 = new FootballData("Arsenal", 36, 87);
         FootballData f2 = new FootballData("Liverpool", 30, 80);
         List<Data> myTestList = Arrays.asList(f1, f2);
