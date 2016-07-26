@@ -14,6 +14,7 @@ job('test_job') {
                 name('main')
                 url('https://github.com/Skarlso/jenkinsbestpractices.git')
             }
+            branch('BFG-123')
         }
     }
 
