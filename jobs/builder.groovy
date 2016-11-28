@@ -11,10 +11,12 @@ import hudson.FilePath
 import groovy.io.FileType
 import jenkins.util.VirtualFile;
 
-branch = build.environment.get("BUILD_NUMBER")
-branchOther = build.buildVariableResolver.resolve("BUILD_NUMBER")
-println branchOther
-job('test_job_' + branch) {
+def build = Thread.currentThread().executable
+def buildNumber = build.number
+//branch = build.environment.get("BUILD_NUMBER")
+//branchOther = build.buildVariableResolver.resolve("BUILD_NUMBER")
+//println branchOther
+job('test_job_' + buildNumber) {
     description """Some
                  multiline text here."""
 
