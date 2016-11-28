@@ -1,5 +1,5 @@
 def env = System.getenv()
-def git_branch = env['GIT_BRANCH']
+def git_branch = env['BRANCH']
 
 job('test_job_' + git_branch) {
     description """Some
