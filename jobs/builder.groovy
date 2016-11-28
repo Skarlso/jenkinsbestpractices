@@ -1,4 +1,7 @@
-job('test_job_' + build.getEnvironment(listener).get('GIT_BRANCH')) {
+def env = System.getenv()
+def git_branch = env['GIT_BRANCH']
+
+job('test_job_' + git_branch) {
     description """Some
                  multiline text here."""
 
