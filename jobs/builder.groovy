@@ -1,14 +1,8 @@
-import com.tikal.jenkins.plugins.multijob.MultiJobBuild.SubBuild;
-import org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildSummaryAction
-import org.jvnet.hudson.plugins.groovypostbuild.GroovyPostbuildAction
 import hudson.model.*
-import com.tikal.jenkins.plugins.multijob.*;
 import hudson.*;
 import hudson.slaves.*;
 import hudson.tasks.*;
 import jenkins.model.Jenkins
-import hudson.plugins.copyartifact.SpecificBuildSelector
-import hudson.plugins.copyartifact.CopyArtifact
 import hudson.model.AbstractBuild
 import hudson.Launcher
 import hudson.model.BuildListener
