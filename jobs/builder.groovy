@@ -1,4 +1,5 @@
 def env = System.getenv()
+println env
 def git_branch = env['BRANCH']
 
 job('test_job_' + git_branch) {
