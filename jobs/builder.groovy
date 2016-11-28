@@ -1,4 +1,4 @@
-job('test_job_' + ${GIT_BRANCH}) {
+job('test_job_' + build.getEnvironment(listener).get('GIT_BRANCH')) {
     description """Some
                  multiline text here."""
 
