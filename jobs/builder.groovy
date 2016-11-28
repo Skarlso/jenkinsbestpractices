@@ -13,7 +13,7 @@ import jenkins.util.VirtualFile;
 
 def build = Thread.currentThread().executable
 def buildNumber = build.number
-println build.environment.get("BRANCH")
+println build.environment
 //branch = build.environment.get("BUILD_NUMBER")
 //branchOther = build.buildVariableResolver.resolve("BUILD_NUMBER")
 //println branchOther
