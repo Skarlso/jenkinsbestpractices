@@ -1,23 +1,8 @@
 import hudson.model.*
-import hudson.*;
-import hudson.slaves.*;
-import hudson.tasks.*;
-import jenkins.model.Jenkins
-import jenkins.model.*
-import hudson.model.AbstractBuild
-import hudson.Launcher
-import hudson.model.BuildListener
-import hudson.FilePath
-import groovy.io.FileType
-import jenkins.util.VirtualFile;
 
 def build = Thread.currentThread().executable
-def buildNumber = build.number
-println build.environment
-//branch = build.environment.get("BUILD_NUMBER")
-//branchOther = build.buildVariableResolver.resolve("BUILD_NUMBER")
-//println branchOther
-job('test_job_' + buildNumber) {
+def branch = build.environment.get("GIT_BRANCH")
+job('test_job_' + branch) {
     description """Some
                  multiline text here."""
 
