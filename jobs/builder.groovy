@@ -3,6 +3,7 @@ import hudson.*;
 import hudson.slaves.*;
 import hudson.tasks.*;
 import jenkins.model.Jenkins
+import jenkins.model.*
 import hudson.model.AbstractBuild
 import hudson.Launcher
 import hudson.model.BuildListener
@@ -10,7 +11,10 @@ import hudson.FilePath
 import groovy.io.FileType
 import jenkins.util.VirtualFile;
 
-job('test_job_' + build.environment.get("BUILD_NUMBER")) {
+branch = build.environment.get("BUILD_NUMBER")
+branchOther = build.buildVariableResolver.resolve("BUILD_NUMBER")
+println branchOther
+job('test_job_' + branch) {
     description """Some
                  multiline text here."""
 
