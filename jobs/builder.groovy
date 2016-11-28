@@ -1,8 +1,4 @@
-def env = System.getenv()
-println env
-def git_branch = env['BRANCH']
-
-job('test_job_' + git_branch) {
+job('test_job_' + build.environment.get("BUILD_NUMBER")) {
     description """Some
                  multiline text here."""
 
