@@ -1,4 +1,5 @@
 import jenkins.*
+import hudson.*
 
 job('test_job_' + build.environment.get("BUILD_NUMBER")) {
     description """Some
