@@ -1,4 +1,4 @@
-job('test_job') {
+job('test_job-${GIT_BRANCH}') {
     description """Some
                  multiline text here."""
 
