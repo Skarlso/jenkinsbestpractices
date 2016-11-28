@@ -1,7 +1,7 @@
 import hudson.model.*
 
 def build = Thread.currentThread().executable
-def branch = build.environment.get("GIT_BRANCH")
+def branch = build.environment.get("GIT_BRANCH").replaceAll('/','-')
 job('test_job_' + branch) {
     description """Some
                  multiline text here."""
