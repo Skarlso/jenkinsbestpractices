@@ -1,3 +1,5 @@
+import jenkins.*
+
 job('test_job_' + build.environment.get("BUILD_NUMBER")) {
     description """Some
                  multiline text here."""
